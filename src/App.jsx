@@ -6,7 +6,7 @@ import Home from "./Pages/Home/Home";
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router future={{ v7_relativeSplatPath: true, v7_startTransition: true }}>
         <div>
           <Navbar />
           <Routes>
@@ -19,4 +19,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
