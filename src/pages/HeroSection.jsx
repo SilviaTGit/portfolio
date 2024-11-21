@@ -16,7 +16,9 @@ export default function HeroSection() {
             <br /> Dolorum, quas. Amet soluta assumenda cum?
           </p>
         </div>
-        <button className="btn btn-primary">Get In Touch</button>
+        <a href="https://www.linkedin.com/in/tuo-profilo-linkedin" target="_blank" rel="noreferrer">
+        <button className="btn btn-primary hero--section--button">Let&apos;s connect!</button>
+        </a>
       </div>
       <div className="hero--section--img">
         <img src={heroImg} alt="Hero Section" />
