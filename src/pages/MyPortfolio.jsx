@@ -39,8 +39,8 @@ export default function MyPortfolio() {
                 <h3 className="portfolio--section--title">{item.title}</h3>
                 <p className="text-md">{item.description}</p>
               </div>
-              <p className="text-sm portfolio--link">
-                {item.link}
+              <a href={item.link} target="_blank" rel="noreferrer" className="text-sm portfolio--link">
+                View in GitHub
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -56,7 +56,7 @@ export default function MyPortfolio() {
                     strokeLinejoin="round"
                   />
                 </svg>
-              </p>
+              </a>
             </div>
           </div>
         ))}

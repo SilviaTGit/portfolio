@@ -5,14 +5,14 @@ export default function HeroSection() {
     <section id="heroSection" className="hero--section">
       <div className="hero--section--content--box">
         <div className="hero--section--content">
-          <p className="section--title">Hey, I&apos;m John</p>
+          <p className="section--title">Hey, I&apos;m Silvia</p>
           <h1 className="hero--section--title">
             <span className="hero--section-title--color">Full Stack</span>{" "}
             <br />
             Developer
           </h1>
           <p className="hero--section-description">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          I am passionate about web development, UI/UX and accessibility.
             <br /> Dolorum, quas. Amet soluta assumenda cum?
           </p>
         </div>
