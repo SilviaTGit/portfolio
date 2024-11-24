@@ -22,7 +22,7 @@
       "id": "4",
       "src": "./img/feather-pen-1.png",
       "title": "Currently Learning",
-      "description": "PHP, MySQL, Bootstrap, Angular.js..."
+      "description": "PHP, MySQL, Bootstrap, Angular.js, Tailwind..."
     }
   ],
   "portfolio": [
@@ -31,35 +31,64 @@
       "src": "./img/preview-booki.png",
       "title": "Booki",
       "description": "Responsive website of a travel agency developed in HTML and CSS, that allows customers to find accommodation and activities in the city they are looking for.",
-      "link": "https://github.com/SilviaTGit/Project2.git"
+      "link": "https://github.com/SilviaTGit/Project2.git",
+      "logos": {
+        "html5": "./img/html5.svg",
+        "css3": "./img/css3.svg",
+        "git": "./img/git.svg",
+        "github": "./img/github.svg"
+      }
     },
     {
       "id": "2",
       "src": "./img/placeholder-image-1.png",
       "title": "Sophie Bluel",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "https://github.com/SilviaTGit/Portfolio-architecte-sophie-bluel.git"
+      "description": "This project involves creating a dynamic webpage for an interior designer using JavaScript, focusing on user interactions, DOM manipulation, and API communication.",
+      "link": "https://github.com/SilviaTGit/Portfolio-architecte-sophie-bluel.git",
+      "logos": {
+        "javascript": "./img/javascript.svg",
+        "swagger": "./img/swagger.svg",
+        "nodejs": "./img/nodejs.svg"
+      }
     },
     {
       "id": "3",
       "src": "./img/placeholder-image-2.png",
       "title": "Nina Carducci",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "https://github.com/SilviaTGit/Nina-Carducci-Dev.git"
+      "description": "Improve the SEO, performance and accessibility of a website by identifying problems and applying fixes, using tools such as Chrome Dev Tools, Lighthouse and Wave.",
+      "link": "https://github.com/SilviaTGit/Nina-Carducci-Dev.git",
+      "logos": {
+        "chrome-dev-tools": "./img/chrome-dev-tools.svg",
+        "google-lighthouse": "./img/lighthouse.svg",
+        "wave": "./img/wave.png"
+      }
     },
     {
       "id": "4",
       "src": "./img/placeholder-image-2.png",
       "title": "Kasa",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "https://github.com/SilviaTGit/Project5.git"
+      "description": "This project involves building the front-end of a real estate rental app using React, React Router, and Vite, focusing on dynamic UI development, page navigation, and styling with Sass.",
+      "link": "https://github.com/SilviaTGit/Project5.git",
+      "logos": {
+        "react": "./img/react.svg",
+        "react-router": "./img/react-router.svg",
+        "vite": "./img/vite.svg",
+        "sass": "./img/sass.svg"
+      }
     },
     {
       "id": "5",
       "src": "./img/placeholder-image-2.png",
       "title": "Mon Vieux Grimoire",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-      "link": "https://github.com/SilviaTGit/P6-Web-Dev-livres.git"
+      "description": "This project involves developing the back-end of a book rating site using, Node.js, Express and MongoDB, implementing CRUD operations, secure authentication, and image handling. It follows an MVC architecture and uses Mongoose for data modeling.",
+      "link": "https://github.com/SilviaTGit/P6-Web-Dev-livres.git",
+      "logos": {
+        "nodejs": "./img/nodejs.svg",
+        "express": "./img/express.svg",
+        "mongodb": "./img/mongodb.svg",
+        "mongoose": "./img/mongoose.svg",
+        "postman": "./img/postman.svg"
+      }
     }
   ]
 }

@@ -38,6 +38,11 @@ export default function MyPortfolio() {
               <div>
                 <h3 className="portfolio--section--title">{item.title}</h3>
                 <p className="text-md">{item.description}</p>
+                <div className="portfolio--section--logos">
+                  {item.logos && Object.keys(item.logos).map((key) => (
+                    <img key={key} src={item.logos[key]} alt={key.toUpperCase()} className="portfolio--logo" />
+                  ))}
+                </div>
               </div>
               <a href={item.link} target="_blank" rel="noreferrer" className="text-sm portfolio--link">
                 View in GitHub

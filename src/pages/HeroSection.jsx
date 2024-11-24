@@ -13,7 +13,7 @@ export default function HeroSection() {
           </h1>
           <p className="hero--section-description">
           I am passionate about web development, UI/UX and accessibility.
-            <br /> Dolorum, quas. Amet soluta assumenda cum?
+            <br /> Are you curious to find out more about me?
           </p>
         </div>
         <a href="https://www.linkedin.com/in/tuo-profilo-linkedin" target="_blank" rel="noreferrer">

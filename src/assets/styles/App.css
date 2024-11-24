@@ -350,10 +350,10 @@ h2 {
 }
 .portfolio--section--container {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 42.6px;
+  gap: 40.6px;
   width: 100%;
+  flex-wrap: wrap;
 }
 .portfolio--section--img {
   border-radius: 8px;
@@ -367,7 +367,7 @@ h2 {
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
-  flex: 1 0 0;
+  max-width: 237.33px;
   background: #fff;
   box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.15);
   cursor: pointer;
@@ -396,6 +396,17 @@ h2 {
 .portfolio--section--card:hover path {
   stroke: #006b6a;
 }
+.portfolio--section--logos {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.portfolio--logo {
+  width: 30px;
+  height: auto;
+}
+
 /* Portfolio Ends */
 
 .contact--section {
@@ -533,6 +544,9 @@ h2 {
   }
   .portfolio--container-box {
     gap: 30px;
+  }
+  .portfolio--section--card {
+    max-width: 100%;
   }
   .skills--section,
   .contact--section,
