@@ -53,7 +53,7 @@
     },
     {
       "id": "3",
-      "src": "./img/placeholder-image-2.png",
+      "src": "./img/preview-nina-carducci.png",
       "title": "Nina Carducci",
       "description": "Improve the SEO, performance and accessibility of a website by identifying problems and applying fixes, using tools such as Chrome Dev Tools, Lighthouse and Wave.",
       "link": "https://github.com/SilviaTGit/Nina-Carducci-Dev.git",
@@ -65,7 +65,7 @@
     },
     {
       "id": "4",
-      "src": "./img/placeholder-image-2.png",
+      "src": "./img/preview-kasa.png",
       "title": "Kasa",
       "description": "This project involves building the front-end of a real estate rental app using React, React Router, and Vite, focusing on dynamic UI development, page navigation, and styling with Sass.",
       "link": "https://github.com/SilviaTGit/Project5.git",
@@ -78,7 +78,7 @@
     },
     {
       "id": "5",
-      "src": "./img/placeholder-image-2.png",
+      "src": "./img/preview-mon-vieux-grimoire.png",
       "title": "Mon Vieux Grimoire",
       "description": "This project involves developing the back-end of a book rating site using, Node.js, Express and MongoDB, implementing CRUD operations, secure authentication, and image handling. It follows an MVC architecture and uses Mongoose for data modeling.",
       "link": "https://github.com/SilviaTGit/P6-Web-Dev-livres.git",
