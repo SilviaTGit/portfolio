@@ -8,7 +8,7 @@ export default function ContactMe() {
         Interested in Working Together?
         </p>
       </div>
-        <a href="mailto:ciao@gmail.com">
+        <a href="mailto:silviatonini.work@gmail.com">
           <button className="btn btn-primary contact--form--btn">Contact Me</button>
         </a>
     </section>

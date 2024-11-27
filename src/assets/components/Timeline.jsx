@@ -13,7 +13,7 @@ function Timeline() {
     };
 
     return (
-        <VerticalTimeline lineColor={getCSSVariable('--github')}>
+        <VerticalTimeline lineColor={getCSSVariable('--secondary')}>
             {events.map((event, index) => (
                 <VerticalTimelineElement
                     key={index}

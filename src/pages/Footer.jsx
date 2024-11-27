@@ -68,7 +68,7 @@ function Footer() {
           <ul>
             <li>
               <a
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/in/silvia-tonini"
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
@@ -91,7 +91,7 @@ function Footer() {
             </li>
             <li>
               <a
-                href="https://github.com/"
+                href="https://github.com/SilviaTGit"
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"

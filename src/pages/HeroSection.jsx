@@ -16,7 +16,7 @@ export default function HeroSection() {
             <br /> Are you curious to find out more about me?
           </p>
         </div>
-        <a href="https://www.linkedin.com/in/tuo-profilo-linkedin" target="_blank" rel="noreferrer">
+        <a href="https://www.linkedin.com/in/silvia-tonini" target="_blank" rel="noreferrer">
         <button className="btn btn-primary hero--section--button">Let&apos;s connect!</button>
         </a>
       </div>

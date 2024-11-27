@@ -7,6 +7,9 @@ body {
   -moz-osx-font-smoothing: "Roboto", sans-serif;
   font-style: normal;
 }
+a {
+  text-decoration: none;
+}
 h1,
 h2,
 h3,
@@ -20,7 +23,7 @@ p {
   --primary: #e62350;
   --heading-color: #23000b;
   --bg-shade: #f5dfb3;
-  --github: #5e34af;
+  --secondary: #5e34af;
   --darkblue: #0e0214;
   --black: #000000;
   --white: #ffffff;
@@ -67,8 +70,8 @@ p {
 }
 .btn-github {
   color: var(--white);
-  background-color: var(--github);
-  border: var(--github);
+  background-color: var(--secondary);
+  border: var(--secondary);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -77,7 +80,7 @@ p {
   gap: 16px;
 }
 .btn-github:hover {
-  color: var(--github);
+  color: var(--secondary);
   background-color: var(--white);
 }
 /* Global CSS Ends */
@@ -396,7 +399,7 @@ h2 {
   font-weight: 600;
 }
 .portfolio--section--card:hover path {
-  stroke: #006b6a;
+  stroke: var(--secondary);
 }
 .portfolio--section--logos {
   display: flex;

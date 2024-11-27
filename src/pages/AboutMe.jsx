@@ -11,10 +11,10 @@ export default function AboutMe() {
           <p className="section--title">About</p>
           <h1 className="skills-section--heading">About Me</h1>
           <p className="hero--section-description">
-          Graduated with a Master&apos;s degree in Foreign Languages for International Business, I possess advanced skills in English, French, and Italian. My academic journey has provided a strong foundation in digital marketing, international, and European law. After my experience as an Export Sales Assistant, where I refined the management of international relations and intercultural communication, I decided to follow my passion for technology, specializing in Web development. I combine my technical skills with a global vision and marketing strategies, creating solid digital solutions, optimized for business and compliant with international regulations.
+          With a Master’s degree in Foreign Languages for International Business, I bring advanced proficiency in English, French, and Italian, complemented by expertise in digital marketing and international law. My career began in export sales, where I honed my skills in managing international relations and intercultural communication. Driven by a passion for technology, I transitioned into Web development, merging my technical capabilities with a strategic, business-oriented approach.
           </p>
           <p className="hero--section-description">
-          I am currently looking for new opportunities for collaboration and growth in the technology sector, where I can make use of my multidisciplinary background. 🌍
+          I specialize in crafting digital solutions that are not only technically robust but also aligned with global business needs and regulatory standards. I am eager to collaborate on projects that leverage my multidisciplinary expertise to deliver impactful results in the technology sector. 🌍
           </p>
         </div>
       </div>
