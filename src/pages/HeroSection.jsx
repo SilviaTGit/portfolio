@@ -1,23 +1,27 @@
+import { useTranslation } from "react-i18next";
 import heroImg from "../assets/images/hero_img1.png";
 
 export default function HeroSection() {
+  const { t } = useTranslation(); // Hook per traduzioni
+
   return (
     <section id="heroSection" className="hero--section">
       <div className="hero--section--content--box">
         <div className="hero--section--content">
-          <p className="section--title">Hey, I&apos;m Silvia</p>
+          <p className="section--title">{t("heroSection.title")}</p>
           <h1 className="hero--section--title">
-            <span className="hero--section-title--color">Full Stack</span>{" "}
+            <span className="hero--section-title--color">
+              {t("heroSection.subtitle")}
+            </span>
             <br />
             Developer
           </h1>
-          <p className="hero--section-description">
-          I am passionate about web development, UI/UX and accessibility.
-            <br /> Are you curious to find out more about me?
-          </p>
+          <p className="hero--section-description">{t("heroSection.description")}</p>
         </div>
         <a href="https://www.linkedin.com/in/silvia-tonini" target="_blank" rel="noreferrer">
-        <button className="btn btn-primary hero--section--button">Let&apos;s connect!</button>
+          <button className="btn btn-primary hero--section--button">
+            {t("heroSection.buttonText")}
+          </button>
         </a>
       </div>
       <div className="hero--section--img">

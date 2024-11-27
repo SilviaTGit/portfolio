@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import logoSvg from "../assets/images/ST-logo-nobg.png";
+import { useTranslation } from "react-i18next";
 
 function Navbar() {
   const [navActive, setNavActive] = useState(false);
+  const { t, i18n } = useTranslation(); // Hook per la traduzione
 
   const toggleNav = () => {
     setNavActive(!navActive);
@@ -13,10 +15,14 @@ function Navbar() {
     setNavActive(false);
   };
 
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang); // Cambia lingua
+  };
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 500) {
-        closeMenu;
+        closeMenu();
       }
     };
 
@@ -29,7 +35,7 @@ function Navbar() {
 
   useEffect(() => {
     if (window.innerWidth <= 1200) {
-      closeMenu;
+      closeMenu();
     }
   }, []);
 
@@ -59,7 +65,7 @@ function Navbar() {
               to="heroSection"
               className="navbar--content"
             >
-              Home
+              {t("navbar.home")} {/* Traduzione dinamica */}
             </Link>
           </li>
           <li>
@@ -73,7 +79,7 @@ function Navbar() {
               to="MyPortfolio"
               className="navbar--content"
             >
-              Portfolio
+              {t("navbar.portfolio")}
             </Link>
           </li>
           <li>
@@ -87,10 +93,19 @@ function Navbar() {
               to="AboutMe"
               className="navbar--content"
             >
-              About Me
+              {t("navbar.aboutMe")}
             </Link>
           </li>
         </ul>
+      </div>
+      <div className="navbar--language-selector">
+        {/* Selettore della lingua */}
+        <button onClick={() => changeLanguage("en")} className="btn-lang">
+          EN
+        </button>
+        <button onClick={() => changeLanguage("fr")} className="btn-lang">
+          FR
+        </button>
       </div>
       <Link
         onClick={closeMenu}
@@ -102,7 +117,7 @@ function Navbar() {
         to="Contact"
         className="btn btn-outline-primary"
       >
-        Contact Me
+        {t("navbar.contact")}
       </Link>
     </nav>
   );

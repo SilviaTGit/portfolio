@@ -1,0 +1,15 @@
+{
+    "heroSection": {
+      "title": "Hey, I'm Silvia",
+      "subtitle": "Full Stack",
+      "description": "I am passionate about web development, UI/UX and accessibility. Are you curious to find out more about me?",
+      "buttonText": "Let's connect!"
+    },
+    "navbar": {
+      "home": "Home",
+      "portfolio": "Portfolio",
+      "aboutMe": "About Me",
+      "contact": "Contact Me"
+    }
+}
+  
