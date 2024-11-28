@@ -5,11 +5,86 @@
       "description": "I am passionate about web development, UI/UX and accessibility. Are you curious to find out more about me?",
       "buttonText": "Let's connect!"
     },
+
     "navbar": {
       "home": "Home",
       "portfolio": "Portfolio",
       "aboutMe": "About Me",
       "contact": "Contact Me"
+    },
+
+    "skillsSection": {
+      "title": "My Skills",
+      "heading": "My Expertise"
+    },
+    "skills": {
+      "frontEnd": {
+        "title": "Front-End",
+        "description": "HTML5, CSS3, Javascript, React.js, Vite, SASS"
+      },
+      "backEnd": {
+        "title": "Back-End",
+        "description": "Node.js, MongoDB, RESTful API, Postman, Express.js"
+      },
+      "uiUxDesign": {
+        "title": "UI & UX Design",
+        "description": "Figma, Adobe XD, Canva"
+      },
+      "currentlyLearning": {
+        "title": "Currently Learning",
+        "description": "PHP, MySQL, Bootstrap, Angular.js, Tailwind..."
+      }
+    },
+    "myPortfolioSection": {
+      "subtitle": "Recent Projects",
+      "heading": "My Portfolio",
+      "gitHubBtn": "Visit My GitHub",
+      "gitHubProjectBtn": "View in GitHub"
+    },
+
+    "portfolio": {
+    "booki": {
+      "title": "Booki",
+      "description": "Responsive website of a travel agency developed in HTML and CSS, that allows customers to find accommodation and activities in the city they are looking for."
+    },
+    "sophieBluel": {
+      "title": "Sophie Bluel",
+      "description": "This project involves creating a dynamic webpage for an interior designer using JavaScript, focusing on user interactions, DOM manipulation, and API communication."
+    },
+    "ninaCarducci": {
+      "title": "Nina Carducci",
+      "description": "Improve the SEO, performance and accessibility of a website by identifying problems and applying fixes, using tools such as Chrome Dev Tools, Lighthouse and Wave."
+    },
+    "kasa": {
+      "title": "Kasa",
+      "description": "This project involves building the front-end of a real estate rental app using React, React Router, and Vite, focusing on dynamic UI development, page navigation, and styling with Sass."
+    },
+    "monVieuxGrimoire": {
+      "title": "Mon Vieux Grimoire",
+      "description": "This project involves developing the back-end of a book rating site using, Node.js, Express and MongoDB, implementing CRUD operations, secure authentication, and image handling. It follows an MVC architecture and uses Mongoose for data modeling."
+    }
+  },
+
+  "aboutMeSection": {
+      "title": "About",
+      "heading": "About Me",
+      "description1": "With a Master’s degree in Foreign Languages for International Business, I bring advanced proficiency in English, French, and Italian, complemented by expertise in digital marketing and international law. My career began in export sales, where I honed my skills in managing international relations and intercultural communication. Driven by a passion for technology, I transitioned into Web development, merging my technical capabilities with a strategic, business-oriented approach.",
+      "description2": "I specialize in crafting digital solutions that are not only technically robust but also aligned with global business needs and regulatory standards. I am eager to collaborate on projects that leverage my multidisciplinary expertise to deliver impactful results in the technology sector. 🌍"
+    },
+
+  "contactMeSection": {
+      "subtitle": "Get In Touch",
+      "heading": "Contact Me",
+      "text": "Interested in Working Together?",
+      "contactMeBtn": "Contact Me"
+    },
+
+  "footer": {
+      "home": "Home",
+      "portfolio": "Portfolio",
+      "aboutMe": "About Me",
+      "contact": "Contact",
+      "content": "Made with 💖 by Silvia"
     }
 }
   

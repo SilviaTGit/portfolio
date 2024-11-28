@@ -3,34 +3,32 @@
     {
       "id": "1",
       "src": "./img/front-end.png",
-      "title": "Front-End",
-      "description": "HTML5, CSS3, Javascript, React.js, Vite, SASS" 
+      "translationKey": "skills.frontEnd"
     },
     {
       "id": "2",
       "src": "./img/back-end.png",
-      "title": "Back-End",
-      "description": "Node.js, MongoDB, RESTful API, Postman, Express.js"
+      "translationKey": "skills.backEnd"
     },
     {
       "id": "3",
       "src": "./img/ui-ux-design.png",
-      "title": "UI & UX Design",
-      "description": "Figma, Adobe XD, Canva"
+      "translationKey": "skills.uiUxDesign"
     },
     {
       "id": "4",
       "src": "./img/learning-skills.png",
-      "title": "Currently Learning",
-      "description": "PHP, MySQL, Bootstrap, Angular.js, Tailwind..."
+      "translationKey": "skills.currentlyLearning"
     }
   ],
   "portfolio": [
     {
       "id": "1",
       "src": "./img/preview-booki.png",
-      "title": "Booki",
-      "description": "Responsive website of a travel agency developed in HTML and CSS, that allows customers to find accommodation and activities in the city they are looking for.",
+      "translations": {
+        "title": "portfolio.booki.title",
+        "description": "portfolio.booki.description"
+      },
       "link": "https://github.com/SilviaTGit/Project2.git",
       "logos": {
         "html5": "./img/html5.svg",
@@ -42,8 +40,10 @@
     {
       "id": "2",
       "src": "./img/preview-sophie-bluel.png",
-      "title": "Sophie Bluel",
-      "description": "This project involves creating a dynamic webpage for an interior designer using JavaScript, focusing on user interactions, DOM manipulation, and API communication.",
+      "translations": {
+        "title": "portfolio.sophieBluel.title",
+        "description": "portfolio.sophieBluel.description"
+      },
       "link": "https://github.com/SilviaTGit/Portfolio-architecte-sophie-bluel.git",
       "logos": {
         "javascript": "./img/javascript.svg",
@@ -54,8 +54,10 @@
     {
       "id": "3",
       "src": "./img/preview-nina-carducci.png",
-      "title": "Nina Carducci",
-      "description": "Improve the SEO, performance and accessibility of a website by identifying problems and applying fixes, using tools such as Chrome Dev Tools, Lighthouse and Wave.",
+      "translations": {
+        "title": "portfolio.ninaCarducci.title",
+        "description": "portfolio.ninaCarducci.description"
+      },
       "link": "https://github.com/SilviaTGit/Nina-Carducci-Dev.git",
       "logos": {
         "chrome-dev-tools": "./img/chrome-dev-tools.svg",
@@ -66,8 +68,10 @@
     {
       "id": "4",
       "src": "./img/preview-kasa.png",
-      "title": "Kasa",
-      "description": "This project involves building the front-end of a real estate rental app using React, React Router, and Vite, focusing on dynamic UI development, page navigation, and styling with Sass.",
+      "translations": {
+        "title": "portfolio.kasa.title",
+        "description": "portfolio.kasa.description"
+      },
       "link": "https://github.com/SilviaTGit/Project5.git",
       "logos": {
         "react": "./img/react.svg",
@@ -79,8 +83,10 @@
     {
       "id": "5",
       "src": "./img/preview-mon-vieux-grimoire.png",
-      "title": "Mon Vieux Grimoire",
-      "description": "This project involves developing the back-end of a book rating site using, Node.js, Express and MongoDB, implementing CRUD operations, secure authentication, and image handling. It follows an MVC architecture and uses Mongoose for data modeling.",
+      "translations": {
+        "title": "portfolio.monVieuxGrimoire.title",
+        "description": "portfolio.monVieuxGrimoire.description"
+      },
       "link": "https://github.com/SilviaTGit/P6-Web-Dev-livres.git",
       "logos": {
         "nodejs": "./img/nodejs.svg",

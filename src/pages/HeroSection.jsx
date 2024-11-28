@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import heroImg from "../assets/images/hero_img1.png";
 
 export default function HeroSection() {
-  const { t } = useTranslation(); // Hook per traduzioni
+  const { t } = useTranslation(); // Hook for translations
 
   return (
     <section id="heroSection" className="hero--section">

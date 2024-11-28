@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 
 function Navbar() {
   const [navActive, setNavActive] = useState(false);
-  const { t, i18n } = useTranslation(); // Hook per la traduzione
+  const { t, i18n } = useTranslation(); // Hook for translations
 
   const toggleNav = () => {
     setNavActive(!navActive);
@@ -16,7 +16,7 @@ function Navbar() {
   };
 
   const changeLanguage = (lang) => {
-    i18n.changeLanguage(lang); // Cambia lingua
+    i18n.changeLanguage(lang); // Change language
   };
 
   useEffect(() => {
@@ -65,7 +65,7 @@ function Navbar() {
               to="heroSection"
               className="navbar--content"
             >
-              {t("navbar.home")} {/* Traduzione dinamica */}
+              {t("navbar.home")} {/* Dynamic translation */}
             </Link>
           </li>
           <li>
@@ -99,7 +99,7 @@ function Navbar() {
         </ul>
       </div>
       <div className="navbar--language-selector">
-        {/* Selettore della lingua */}
+        {/* Language selector */}
         <button onClick={() => changeLanguage("en")} className="btn-lang">
           EN
         </button>

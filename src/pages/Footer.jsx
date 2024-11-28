@@ -1,7 +1,10 @@
 import { Link } from "react-scroll";
 import footerLogo from "../assets/images/ST-logo-nobg.png";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const {t} = useTranslation();
+
   return (
     <footer className="footer--container">
       <div className="footer--link--container">
@@ -20,7 +23,7 @@ function Footer() {
                 to="heroSection"
                 className="text-md"
               >
-                Home
+                {t("footer.home")}
               </Link>
             </li>
             <li>
@@ -33,7 +36,7 @@ function Footer() {
                 to="MyPortfolio"
                 className="text-md"
               >
-                Portfolio
+                {t("footer.portfolio")}
               </Link>
             </li>
             <li>
@@ -46,7 +49,7 @@ function Footer() {
                 to="AboutMe"
                 className="text-md"
               >
-                About Me
+                {t("footer.aboutMe")}
               </Link>
             </li>
             <li>
@@ -59,7 +62,7 @@ function Footer() {
                 to="Contact"
                 className="text-md"
               >
-                Contact
+                {t("footer.contact")}
               </Link>
             </li>
           </ul>
@@ -116,7 +119,7 @@ function Footer() {
       </div>
       <hr className="divider" />
       <div className="footer--content--container">
-        <p className="footer--content">Made with 💖 by Silvia</p>
+        <p className="footer--content">{t("footer.content")}</p>
       </div>
     </footer>
   );

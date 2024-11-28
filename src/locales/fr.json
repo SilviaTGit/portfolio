@@ -8,8 +8,81 @@
     "navbar": {
       "home": "Accueil",
       "portfolio": "Portfolio",
-      "aboutMe": "À propos de moi",
+      "aboutMe": "À Propos",
       "contact": "Contactez-moi"
+    },
+    "skillsSection": {
+      "title": "Mes Compétences",
+      "heading": "Mon Expertise"
+    },
+    "skills": {
+      "frontEnd": {
+        "title": "Front-End",
+        "description": "HTML5, CSS3, Javascript, React.js, Vite, SASS"
+      },
+      "backEnd": {
+        "title": "Back-End",
+        "description": "Node.js, MongoDB, API RESTful, Postman, Express.js"
+      },
+      "uiUxDesign": {
+        "title": "Conception UI et UX",
+        "description": "Figma, Adobe XD, Canva"
+      },
+      "currentlyLearning": {
+        "title": "Actuellement en apprentissage",
+        "description": "PHP, MySQL, Bootstrap, Angular.js, Tailwind..."
+      }
+    },
+    "myPortfolioSection": {
+      "subtitle": "Derniers Projets",
+      "heading": "Mon Portfolio",
+      "gitHubBtn": "Visitez Mon GitHub",
+      "gitHubProjectBtn": "Voir sur GitHub"
+    },
+    
+    "portfolio": {
+    "booki": {
+      "title": "Booki",
+      "description": "Site web réactif d'une agence de voyages développé en HTML et CSS, permettant aux clients de trouver un hébergement et des activités dans la ville de leur choix."
+    },
+    "sophieBluel": {
+      "title": "Sophie Bluel",
+      "description": "Ce projet implique la création d'une page web dynamique pour une décoratrice d'intérieur en JavaScript, en mettant l'accent sur les interactions utilisateur, la manipulation du DOM et la communication avec les API."
+    },
+    "ninaCarducci": {
+      "title": "Nina Carducci",
+      "description": "Améliorer le SEO, les performances et l'accessibilité d'un site web en identifiant les problèmes et en appliquant des correctifs, à l'aide d'outils tels que Chrome Dev Tools, Lighthouse et Wave."
+    },
+    "kasa": {
+      "title": "Kasa",
+      "description": "Ce projet consiste à construire le front-end d'une application de location immobilière en utilisant React, React Router et Vite, en se concentrant sur le développement d'interface utilisateur dynamique, la navigation entre les pages et le stylisme avec Sass."
+    },
+    "monVieuxGrimoire": {
+      "title": "Mon Vieux Grimoire",
+      "description": "Ce projet implique le développement du back-end d'un site de notation de livres avec Node.js, Express et MongoDB, en implémentant des opérations CRUD, une authentification sécurisée et la gestion des images. Il suit une architecture MVC et utilise Mongoose pour la modélisation des données."
+    }
+  },
+
+  "aboutMeSection": {
+    "title": "À propos",
+    "heading": "À propos de Moi",
+    "description1": "Titulaire d’un Master en Langues étrangères pour les affaires internationales, je possède des compétences avancées en anglais, français et italien, complétées par une expertise en marketing numérique et en droit international. Ma carrière a débuté dans la vente à l’exportation, où j’ai perfectionné mes compétences en gestion des relations internationales et de la communication interculturelle. Animé par une passion pour la technologie, je suis passé au développement Web, fusionnant mes capacités techniques avec une approche stratégique et axée sur les affaires.",
+    "description2": "Je me spécialise dans la création de solutions numériques qui sont non seulement techniquement robustes, mais également alignées sur les besoins commerciaux mondiaux et les normes réglementaires. Je suis impatient de collaborer à des projets qui mettent à profit mon expertise multidisciplinaire pour produire des résultats percutants dans le secteur de la technologie. 🌍"
+  },
+
+  "contactMeSection": {
+      "subtitle": "Entrer en contact",
+      "heading": "Contactez-moi",
+      "text": "Souhaitez-vous collaborer ?",
+      "contactMeBtn": "Contactez-moi"
+    },
+
+  "footer": {
+      "home": "Accueil",
+      "portfolio": "Portfolio",
+      "aboutMe": "À Propos",
+      "contact": "Contact",
+      "content": "Réalisé avec 💖 par Silvia"
     }
 }
   

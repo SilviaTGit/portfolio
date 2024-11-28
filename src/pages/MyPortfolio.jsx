@@ -1,12 +1,15 @@
 import data from "../data/index.json";
+import { useTranslation } from "react-i18next";
 
 export default function MyPortfolio() {
+  const {t} = useTranslation();
+
   return (
     <section className="portfolio--section" id="MyPortfolio">
       <div className="portfolio--container-box">
         <div className="portfolio--container">
-          <p className="sub--title">Recent Projects</p>
-          <h2 className="section--heading">My Portfolio</h2>
+          <p className="sub--title">{t("myPortfolioSection.subtitle")}</p>
+          <h2 className="section--heading">{t("myPortfolioSection.heading")}</h2>
         </div>
         <div>
         <a
@@ -30,7 +33,7 @@ export default function MyPortfolio() {
                 fill="currentColor"
               />
             </svg>
-            Visit My GitHub
+            {t("myPortfolioSection.gitHubBtn")}
           </button>
           </a>
         </div>
@@ -43,8 +46,8 @@ export default function MyPortfolio() {
             </div>
             <div className="portfolio--section--card--content">
               <div>
-                <h3 className="portfolio--section--title">{item.title}</h3>
-                <p className="text-md">{item.description}</p>
+                <h3 className="portfolio--section--title">{t(item.translations.title)}</h3>
+                <p className="text-md">{t(item.translations.description)}</p>
                 <div className="portfolio--section--logos">
                   {item.logos && Object.keys(item.logos).map((key) => (
                     <img key={key} src={item.logos[key]} alt={key.toUpperCase()} className="portfolio--logo" />
@@ -52,7 +55,7 @@ export default function MyPortfolio() {
                 </div>
               </div>
               <a href={item.link} target="_blank" rel="noreferrer" className="text-sm portfolio--link">
-                View in GitHub
+                {t("myPortfolioSection.gitHubProjectBtn")}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"

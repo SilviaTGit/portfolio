@@ -6,8 +6,8 @@ import en from './locales/en.json';
 import fr from './locales/fr.json';
 
 i18n
-  .use(LanguageDetector) // Per rilevare automaticamente la lingua
-  .use(initReactI18next) // Per integrare React
+  .use(LanguageDetector) // To automatically detect language
+  .use(initReactI18next) // To integrate React
   .init({
     resources: {
       en: { translation: en },
