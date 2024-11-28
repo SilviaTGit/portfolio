@@ -1,11 +1,24 @@
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import {FaGraduationCap } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 
 function Timeline() {
+    const { t } = useTranslation();
+
     const events = [
-        { title: 'Università degli Studi di Modena e Reggio Emilia', date: 'January 2020 - April 2023', description: "Master's Degree in Languages for communication in international enterprises and organizations", icon: <FaGraduationCap /> },
-        { title: 'Openclassrooms', date: 'April 2024 - December 2024', description: 'Web Developer training program', icon: <FaGraduationCap /> },
+        {
+            titleKey: 'timeline.university.title',
+            dateKey: 'timeline.university.date',
+            descriptionKey: 'timeline.university.description',
+            icon: <FaGraduationCap />,
+        },
+        {
+            titleKey: 'timeline.openclassrooms.title',
+            dateKey: 'timeline.openclassrooms.date',
+            descriptionKey: 'timeline.openclassrooms.description',
+            icon: <FaGraduationCap />,
+        },
     ];
 
     const getCSSVariable = (variableName) => {
@@ -17,7 +30,7 @@ function Timeline() {
             {events.map((event, index) => (
                 <VerticalTimelineElement
                     key={index}
-                    date={event.date}
+                    date={t(event.dateKey)}
                     iconStyle={{ background: getCSSVariable('--primary'), color: getCSSVariable('--white') }}
                     contentStyle={{
                         background: getCSSVariable('--bg-shade'),
@@ -25,8 +38,8 @@ function Timeline() {
                     contentArrowStyle={{ borderRight: `7px solid ${getCSSVariable('--bg-shade')}` }}
                     icon={event.icon}
                 >
-                    <h3 className="vertical-timeline-element-title">{event.title}</h3>
-                    <p>{event.description}</p>
+                    <h3 className="vertical-timeline-element-title">{t(event.titleKey)}</h3>
+                    <p>{t(event.descriptionKey)}</p>
                 </VerticalTimelineElement>
             ))}
         </VerticalTimeline>

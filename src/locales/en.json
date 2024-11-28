@@ -85,6 +85,24 @@
       "aboutMe": "About Me",
       "contact": "Contact",
       "content": "Made with 💖 by Silvia"
+    },
+
+  "educationSection": {
+      "subtitle": "My Education Timeline",
+      "heading": "Education"
+    },
+
+  "timeline": {
+        "university": {
+            "title": "University of Modena and Reggio Emilia",
+            "date": "January 2020 - April 2023",
+            "description": "Master's Degree in Languages for Communication in International Enterprises and Organizations"
+        },
+        "openclassrooms": {
+            "title": "OpenClassrooms",
+            "date": "April 2024 - December 2024",
+            "description": "Web Developer training program"
+        }
     }
 }
   

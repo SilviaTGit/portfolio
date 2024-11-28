@@ -83,6 +83,23 @@
       "aboutMe": "À Propos",
       "contact": "Contact",
       "content": "Réalisé avec 💖 par Silvia"
+    },
+
+  "educationSection": {
+      "subtitle": "Mon Parcours éducatif",
+      "heading": "Formation"
+    },
+
+  "timeline": {
+        "university": {
+            "title": "Université de Modena et Reggio Emilia",
+            "date": "Janvier 2020 - Avril 2023",
+            "description": "Master en langues pour la communication dans les entreprises et organisations internationales"
+        },
+        "openclassrooms": {
+            "title": "OpenClassrooms",
+            "date": "Avril 2024 - Décembre 2024",
+            "description": "Programme de formation développeur web"
+        }
     }
 }
-  
