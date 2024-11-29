@@ -24,7 +24,7 @@
   "portfolio": [
     {
       "id": "1",
-      "src": "./img/preview-booki.png",
+      "src": "./img/preview-booki.webp",
       "translations": {
         "title": "portfolio.booki.title",
         "description": "portfolio.booki.description"
@@ -39,7 +39,7 @@
     },
     {
       "id": "2",
-      "src": "./img/preview-sophie-bluel.png",
+      "src": "./img/preview-sophie-bluel.webp",
       "translations": {
         "title": "portfolio.sophieBluel.title",
         "description": "portfolio.sophieBluel.description"
@@ -53,7 +53,7 @@
     },
     {
       "id": "3",
-      "src": "./img/preview-nina-carducci.png",
+      "src": "./img/preview-nina-carducci.webp",
       "translations": {
         "title": "portfolio.ninaCarducci.title",
         "description": "portfolio.ninaCarducci.description"
@@ -67,7 +67,7 @@
     },
     {
       "id": "4",
-      "src": "./img/preview-kasa.png",
+      "src": "./img/preview-kasa.webp",
       "translations": {
         "title": "portfolio.kasa.title",
         "description": "portfolio.kasa.description"
@@ -82,7 +82,7 @@
     },
     {
       "id": "5",
-      "src": "./img/preview-mon-vieux-grimoire.png",
+      "src": "./img/preview-mon-vieux-grimoire.webp",
       "translations": {
         "title": "portfolio.monVieuxGrimoire.title",
         "description": "portfolio.monVieuxGrimoire.description"
