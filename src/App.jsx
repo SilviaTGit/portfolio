@@ -6,7 +6,13 @@ import Home from "./Pages/Home/Home";
 function App() {
   return (
     <div className="App">
-      <Router basename="/portfolio">
+      <Router
+        basename="/portfolio"
+        future={{
+          v7_relativeSplatPath: true,
+          v7_startTransition: true,
+        }}
+      >
         <div>
           <Navbar />
           <Routes>
