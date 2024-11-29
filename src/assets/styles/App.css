@@ -196,6 +196,50 @@ h2 {
   width: 200px;
   height: auto;
 }
+
+.navbar--btns {
+  display: flex;
+  gap: 21.333px;
+}
+
+/* Language Selector */
+.navbar--language-selector .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar--language-selector .dropdown-btn {
+  background-color: var(--primary);
+  color: var(--white);
+  border: none;
+}
+
+.navbar--language-selector .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--bg-shade);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.navbar--language-selector .dropdown-item {
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: var(--white);
+  color: var(--text);
+  text-align: left;
+  border: none;
+  width: 100%;
+}
+
+.navbar--language-selector .dropdown-item:hover {
+  background-color: var(--secondary);
+  color: var(--white);
+}
+
 /* Navbar Styler Ends */
 
 /* Hero Section Style */
@@ -613,7 +657,7 @@ h2 {
     padding: 133.333px 30px;
   }
   .navbar {
-    padding: 5px 15.333px;
+    padding: 5px 70px 5px 15.333px;
   }
 }
 
@@ -626,7 +670,7 @@ h2 {
   flex-direction: column;
   justify-content: space-around;
   position: absolute;
-  top: 25px;
+  top: 39px;
   right: 25px;
 }
 

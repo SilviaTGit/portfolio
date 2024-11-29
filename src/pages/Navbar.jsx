@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 function Navbar() {
   const [navActive, setNavActive] = useState(false);
   const { t, i18n } = useTranslation(); // Hook for translations
+  const [dropdownOpen, setDropdownOpen] = useState(false); // State for the language dropdown
 
   const toggleNav = () => {
     setNavActive(!navActive);
@@ -15,8 +16,11 @@ function Navbar() {
     setNavActive(false);
   };
 
+  const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
+
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang); // Change language
+    setDropdownOpen(false); // Close dropdown after language change
   };
 
   useEffect(() => {
@@ -98,14 +102,24 @@ function Navbar() {
           </li>
         </ul>
       </div>
+    <div className="navbar--btns">
       <div className="navbar--language-selector">
         {/* Language selector */}
-        <button onClick={() => changeLanguage("en")} className="btn-lang">
-          EN
-        </button>
-        <button onClick={() => changeLanguage("fr")} className="btn-lang">
-          FR
-        </button>
+        <div className="dropdown">
+          <button onClick={toggleDropdown} className="btn btn-lang dropdown-btn">
+            {t("navbar.language")} ▾
+          </button>
+          {dropdownOpen && (
+            <div className="dropdown-menu">
+              <button onClick={() => changeLanguage("en")} className="dropdown-item">
+                EN - English
+              </button>
+              <button onClick={() => changeLanguage("fr")} className="dropdown-item">
+                FR - Français
+              </button>
+          </div>
+          )}
+        </div>
       </div>
       <Link
         onClick={closeMenu}
@@ -119,6 +133,7 @@ function Navbar() {
       >
         {t("navbar.contact")}
       </Link>
+    </div>
     </nav>
   );
 }
