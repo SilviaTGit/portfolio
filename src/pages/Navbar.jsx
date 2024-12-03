@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import logoSvg from "../assets/images/ST-logo-nobg.png";
+import logoSvg from "../assets/images/ST-logo-nobg-100w.webp";
 import { useTranslation } from "react-i18next";
 
 function Navbar() {

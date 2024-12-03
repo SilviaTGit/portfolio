@@ -190,11 +190,11 @@ h2 {
 }
 .navbar--logo--img {
   width: 70px;
-  height: auto;
+  height: 70px;
 }
 .footer--logo--img {
-  width: 200px;
-  height: auto;
+  width: 100px;
+  height: 100px;
 }
 
 .navbar--btns {
@@ -339,6 +339,10 @@ h2 {
   border-radius: 10.6px;
   background: #fff;
   box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
+  img {
+    width: 54px;
+    height: 54px;
+  }
 }
 .skills--section--card--content {
   display: flex;
@@ -453,7 +457,7 @@ h2 {
 
 .portfolio--logo {
   width: 30px;
-  height: auto;
+  height: 30px;
 }
 /* Portfolio Ends */
 

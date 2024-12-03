@@ -2,22 +2,22 @@
   "skills": [
     {
       "id": "1",
-      "src": "./img/front-end.png",
+      "src": "./img/front-end.webp",
       "translationKey": "skills.frontEnd"
     },
     {
       "id": "2",
-      "src": "./img/back-end.png",
+      "src": "./img/back-end.webp",
       "translationKey": "skills.backEnd"
     },
     {
       "id": "3",
-      "src": "./img/ui-ux-design.png",
+      "src": "./img/ui-ux-design.webp",
       "translationKey": "skills.uiUxDesign"
     },
     {
       "id": "4",
-      "src": "./img/learning-skills.png",
+      "src": "./img/learning-skills.webp",
       "translationKey": "skills.currentlyLearning"
     }
   ],
@@ -31,10 +31,10 @@
       },
       "link": "https://github.com/SilviaTGit/Project2.git",
       "logos": {
-        "html5": "./img/html5.svg",
-        "css3": "./img/css3.svg",
-        "git": "./img/git.svg",
-        "github": "./img/github.svg"
+        "html5": "./img/html5.webp",
+        "css3": "./img/css3.webp",
+        "git": "./img/git.webp",
+        "github": "./img/github.webp"
       }
     },
     {
@@ -46,9 +46,9 @@
       },
       "link": "https://github.com/SilviaTGit/Portfolio-architecte-sophie-bluel.git",
       "logos": {
-        "javascript": "./img/javascript.svg",
-        "swagger": "./img/swagger.svg",
-        "nodejs": "./img/nodejs.svg"
+        "javascript": "./img/javascript.webp",
+        "swagger": "./img/swagger.webp",
+        "nodejs": "./img/nodejs.webp"
       }
     },
     {
@@ -60,9 +60,9 @@
       },
       "link": "https://github.com/SilviaTGit/Nina-Carducci-Dev.git",
       "logos": {
-        "chrome-dev-tools": "./img/chrome-dev-tools.svg",
-        "google-lighthouse": "./img/lighthouse.svg",
-        "wave": "./img/wave.png"
+        "chrome-dev-tools": "./img/chrome-dev-tools.webp",
+        "google-lighthouse": "./img/lighthouse.webp",
+        "wave": "./img/wave.webp"
       }
     },
     {
@@ -74,10 +74,10 @@
       },
       "link": "https://github.com/SilviaTGit/Project5.git",
       "logos": {
-        "react": "./img/react.svg",
-        "react-router": "./img/react-router.svg",
-        "vite": "./img/vite.svg",
-        "sass": "./img/sass.svg"
+        "react": "./img/react.webp",
+        "react-router": "./img/react-router.webp",
+        "vite": "./img/vite.webp",
+        "sass": "./img/sass.webp"
       }
     },
     {
@@ -89,11 +89,11 @@
       },
       "link": "https://github.com/SilviaTGit/P6-Web-Dev-livres.git",
       "logos": {
-        "nodejs": "./img/nodejs.svg",
-        "express": "./img/express.svg",
-        "mongodb": "./img/mongodb.svg",
-        "mongoose": "./img/mongoose.svg",
-        "postman": "./img/postman.svg"
+        "nodejs": "./img/nodejs.webp",
+        "express": "./img/express.webp",
+        "mongodb": "./img/mongodb.webp",
+        "mongoose": "./img/mongoose.webp",
+        "postman": "./img/postman.webp"
       }
     }
   ]

@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import footerLogo from "../assets/images/ST-logo-nobg.png";
+import footerLogo from "../assets/images/ST-logo-nobg.webp";
 import { useTranslation } from "react-i18next";
 
 function Footer() {
