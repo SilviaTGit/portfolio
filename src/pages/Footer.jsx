@@ -75,6 +75,7 @@ function Footer() {
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Go to my LinkedIn"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -98,6 +99,7 @@ function Footer() {
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Go to my GitHub"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

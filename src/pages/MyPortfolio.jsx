@@ -18,7 +18,7 @@ export default function MyPortfolio() {
                 target="_blank"
                 rel="noreferrer"
               >
-          <button className="btn btn-github">
+          <button className="btn btn-primary btn-github">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"

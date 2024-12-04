@@ -21,10 +21,8 @@ export default function HeroSection() {
           </h1>
           <p className="hero--section-description">{t("heroSection.description")}</p>
         </div>
-        <a href="https://www.linkedin.com/in/silvia-tonini" target="_blank" rel="noreferrer">
-          <button className="btn btn-primary hero--section--button">
+        <a href="https://www.linkedin.com/in/silvia-tonini" target="_blank" rel="noreferrer" className="btn btn-primary hero--section--button">
             {t("heroSection.buttonText")}
-          </button>
         </a>
       </div>
       <div className="hero--section--img">
