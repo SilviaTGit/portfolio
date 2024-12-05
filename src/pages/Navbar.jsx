@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
-import logoSvg from "../assets/images/ST-logo-nobg-100w.webp";
+import logoST from "../assets/images/ST-logo-nobg-100w.webp";
 import { useTranslation } from "react-i18next";
 
 function Navbar() {
@@ -46,7 +46,7 @@ function Navbar() {
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
       <div>
-        <img src={logoSvg} alt="Logo" className="navbar--logo--img" />
+        <img src={logoST} alt="Logo" className="navbar--logo--img" />
       </div>
       <a
         className={`nav__hamburger ${navActive ? "active" : ""}`}

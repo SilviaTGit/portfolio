@@ -26,12 +26,12 @@ function Timeline() {
     };
 
     return (
-        <VerticalTimeline lineColor={getCSSVariable('--secondary')}>
+        <VerticalTimeline lineColor={getCSSVariable('--primary')}>
             {events.map((event, index) => (
                 <VerticalTimelineElement
                     key={index}
                     date={t(event.dateKey)}
-                    iconStyle={{ background: getCSSVariable('--primary'), color: getCSSVariable('--white') }}
+                    iconStyle={{ background: getCSSVariable('--secondary'), color: getCSSVariable('--white') }}
                     contentStyle={{
                         background: getCSSVariable('--bg-shade'),
                     }}
