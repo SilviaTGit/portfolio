@@ -1,12 +1,15 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link } from "react-scroll";
 import logoST from "../assets/images/ST-logo-nobg-100w.webp";
 import { useTranslation } from "react-i18next";
+import flagEN from "../assets/images/flags/english.webp";
+import flagFR from "../assets/images/flags/french.webp";
 
 function Navbar() {
   const [navActive, setNavActive] = useState(false);
   const { t, i18n } = useTranslation(); // Hook for translations
   const [dropdownOpen, setDropdownOpen] = useState(false); // State for the language dropdown
+  const dropdownRef = useRef(null); // Ref for the dropdown
 
   const toggleNav = () => {
     setNavActive(!navActive);
@@ -36,6 +39,19 @@ function Navbar() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [dropdownRef]);
 
   useEffect(() => {
     if (window.innerWidth <= 1200) {
@@ -105,17 +121,19 @@ function Navbar() {
     <div className="navbar--btns">
       <div className="navbar--language-selector">
         {/* Language selector */}
-        <div className="dropdown">
-          <button onClick={toggleDropdown} className="btn btn-lang dropdown-btn">
+        <div ref={dropdownRef} className={`dropdown ${dropdownOpen ? "open" : ""}`}>
+          <button onClick={toggleDropdown} className="btn btn-lang btn-outline-primary">
             {t("navbar.language")} ▾
           </button>
           {dropdownOpen && (
             <div className="dropdown-menu">
               <button onClick={() => changeLanguage("en")} className="dropdown-item">
-                EN - English
+                <img src={flagEN} alt="English" className="flag-icon" />
+                <p>English</p>
               </button>
               <button onClick={() => changeLanguage("fr")} className="dropdown-item">
-                FR - Français
+                <img src={flagFR} alt="French" className="flag-icon" />
+                <p>Français</p>
               </button>
           </div>
           )}
