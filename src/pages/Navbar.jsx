@@ -1,5 +1,4 @@
-import { useState, useEffect, useRef } from "react";
-import { Link } from "react-scroll";
+import { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import logoST from "../assets/images/ST-logo-nobg-100w.webp";
 import { useTranslation } from "react-i18next";
 import flagEN from "../assets/images/flags/english.webp";
@@ -7,38 +6,64 @@ import flagFR from "../assets/images/flags/french.webp";
 
 function Navbar() {
   const [navActive, setNavActive] = useState(false);
-  const { t, i18n } = useTranslation(); // Hook for translations
-  const [dropdownOpen, setDropdownOpen] = useState(false); // State for the language dropdown
-  const dropdownRef = useRef(null); // Ref for the dropdown
+  const [activeSection, setActiveSection] = useState(""); // Status for the active section
+  const { t, i18n } = useTranslation();
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
+
+  // Definition of the sections
+  const sections = useMemo(
+    () => [
+    { id: "heroSection", label: "home" },
+    { id: "MyPortfolio", label: "portfolio" },
+    { id: "AboutMe", label: "aboutMe" },
+    { id: "Contact", label: "contact" },
+  ],
+  []
+  );
 
   const toggleNav = () => {
-    setNavActive(!navActive);
+    setNavActive((prev) => !prev); // Reverse the menu status
   };
 
   const closeMenu = () => {
     setNavActive(false);
   };
 
-  const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
+  const toggleDropdown = () => setDropdownOpen((prev) => !prev);
 
   const changeLanguage = (lang) => {
-    i18n.changeLanguage(lang); // Change language
-    setDropdownOpen(false); // Close dropdown after language change
+    i18n.changeLanguage(lang);
+    setDropdownOpen(false);
+  };
+
+  // Function to handle scrolling
+  const handleScroll = useCallback(() => {
+    let currentSection = "";
+    sections.forEach(({ id }) => {
+      const element = document.getElementById(id);
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        if (rect.top <= 100 && rect.bottom >= 100) {
+          currentSection = id;
+        }
+      }
+    });
+    setActiveSection(currentSection);
+  }, [sections]);
+
+  const scrollToSection = (event, id) => {
+    event.preventDefault();
+    closeMenu(); // To close the mobile menu
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
 
   useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth <= 500) {
-        closeMenu();
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [handleScroll]);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -46,17 +71,10 @@ function Navbar() {
         setDropdownOpen(false);
       }
     };
-
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [dropdownRef]);
-
-  useEffect(() => {
-    if (window.innerWidth <= 1200) {
-      closeMenu();
-    }
   }, []);
 
   return (
@@ -66,7 +84,11 @@ function Navbar() {
       </div>
       <a
         className={`nav__hamburger ${navActive ? "active" : ""}`}
-        onClick={toggleNav}
+        onClick={(e) => {
+          e.preventDefault(); // To prevent the default behavior of the anchor tag
+          toggleNav();
+        }}
+        href="#"
       >
         <span className="nav__hamburger__line"></span>
         <span className="nav__hamburger__line"></span>
@@ -74,84 +96,66 @@ function Navbar() {
       </a>
       <div className={`navbar--items ${navActive ? "active" : ""}`}>
         <ul>
-          <li>
-            <Link
-              onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              to="heroSection"
-              className="navbar--content"
-            >
-              {t("navbar.home")} {/* Dynamic translation */}
-            </Link>
-          </li>
-          <li>
-            <Link
-              onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              to="MyPortfolio"
-              className="navbar--content"
-            >
-              {t("navbar.portfolio")}
-            </Link>
-          </li>
-          <li>
-            <Link
-              onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              to="AboutMe"
-              className="navbar--content"
-            >
-              {t("navbar.aboutMe")}
-            </Link>
-          </li>
+          {sections
+            .filter((section) => section.id !== "Contact") // Exclude "Contact" from main links because it's a button
+            .map(({ id, label }) => (
+              <li key={id}>
+                <a
+                  href={`#${id}`}
+                  onClick={(e) => scrollToSection(e, id)}
+                  className={`navbar--content ${
+                    activeSection === id ? "navbar--active-content" : ""
+                  }`}
+                >
+                  {t(`navbar.${label}`)}
+                </a>
+              </li>
+            ))}
         </ul>
       </div>
-    <div className="navbar--btns">
-      <div className="navbar--language-selector">
-        {/* Language selector */}
-        <div ref={dropdownRef} className={`dropdown ${dropdownOpen ? "open" : ""}`}>
-          <button onClick={toggleDropdown} className="btn btn-lang btn-outline-primary">
-            {t("navbar.language")} ▾
-          </button>
-          {dropdownOpen && (
-            <div className="dropdown-menu">
-              <button onClick={() => changeLanguage("en")} className="dropdown-item">
-                <img src={flagEN} alt="English" className="flag-icon" />
-                <p>English</p>
-              </button>
-              <button onClick={() => changeLanguage("fr")} className="dropdown-item">
-                <img src={flagFR} alt="French" className="flag-icon" />
-                <p>Français</p>
-              </button>
+      <div className="navbar--btns">
+        <div className="navbar--language-selector">
+          <div
+            ref={dropdownRef}
+            className={`dropdown ${dropdownOpen ? "open" : ""}`}
+          >
+            <button
+              onClick={toggleDropdown}
+              className="btn btn-lang btn-outline-primary"
+            >
+              {t("navbar.language")} ▾
+            </button>
+            {dropdownOpen && (
+              <div className="dropdown-menu">
+                <button
+                  onClick={() => changeLanguage("en")}
+                  className="dropdown-item"
+                >
+                  <img src={flagEN} alt="English" className="flag-icon" />
+                  <p>English</p>
+                </button>
+                <button
+                  onClick={() => changeLanguage("fr")}
+                  className="dropdown-item"
+                >
+                  <img src={flagFR} alt="French" className="flag-icon" />
+                  <p>Français</p>
+                </button>
+              </div>
+            )}
           </div>
-          )}
         </div>
+        {/* Contact Button */}
+        <a
+          href="#Contact"
+          onClick={(e) => scrollToSection(e, "Contact")}
+          className={`btn contact-btn btn-outline-primary ${
+            activeSection === "Contact" ? "navbar--active-content" : ""
+          }`}
+        >
+          {t("navbar.contact")}
+        </a>
       </div>
-      <Link
-        onClick={closeMenu}
-        activeClass="navbar--active-content"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-        to="Contact"
-        className="btn btn-outline-primary"
-      >
-        {t("navbar.contact")}
-      </Link>
-    </div>
     </nav>
   );
 }

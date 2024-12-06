@@ -1,70 +1,65 @@
-import { Link } from "react-scroll";
+import { useState, useEffect, useMemo } from "react";
 import footerLogo from "../assets/images/ST-logo-nobg.webp";
 import { useTranslation } from "react-i18next";
 
 function Footer() {
   const {t} = useTranslation();
+  const [activeSection, setActiveSection] = useState(""); // Status for the active section
+
+  const sections = useMemo(() => [
+    { id: "heroSection", label: "home" },
+    { id: "MyPortfolio", label: "portfolio" },
+    { id: "AboutMe", label: "aboutMe" },
+    { id: "Contact", label: "contact" },
+  ], []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      let currentSection = "";
+      sections.forEach(({ id }) => {
+        const element = document.getElementById(id);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          // Check if the section is visible (partially or completely)
+          if (rect.top <= 100 && rect.bottom >= 100) {
+            currentSection = id;
+          }
+        }
+      });
+      setActiveSection(currentSection);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [sections]);
+
+  const scrollToSection = (event, id) => {
+    event.preventDefault();
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
+
 
   return (
     <footer className="footer--container">
       <div className="footer--link--container">
         <div>
-          <img src={footerLogo} alt="Logo" className="footer--logo--img"/>
+          <img src={footerLogo} alt="Logo" className="footer--logo--img" />
         </div>
         <div className="footer--items">
           <ul>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="heroSection"
-                className="text-md"
-              >
-                {t("footer.home")}
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="MyPortfolio"
-                className="text-md"
-              >
-                {t("footer.portfolio")}
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="AboutMe"
-                className="text-md"
-              >
-                {t("footer.aboutMe")}
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="Contact"
-                className="text-md"
-              >
-                {t("footer.contact")}
-              </Link>
-            </li>
+            {sections.map(({ id, label }) => (
+              <li key={id}>
+                <a
+                  href={`#${id}`}
+                  onClick={(e) => scrollToSection(e, id)}
+                  className={`text-md ${
+                    activeSection === id ? "navbar--active-content" : ""
+                  }`}
+                >
+                  {t(`footer.${label}`)} {/* Use translation */}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
         <div className="footer--social--icon">

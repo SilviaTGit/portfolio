@@ -8,7 +8,6 @@ This is a personal portfolio website built using React and Vite. The project sho
 - **Vite**: A fast, opinionated build tool that provides fast development and production builds.
 - **i18next**: A powerful internationalization framework for translating content in the app.
 - **React-Router-Dom**: For handling navigation and routing within the app.
-- **React-Scroll**: For smooth scrolling effects.
 - **React-Icons**: For adding various icons to the application.
 - **React-Vertical-Timeline-Component**: For a vertical timeline component to showcase experience or milestones.
 - **ESLint**: For maintaining code quality and consistency.
