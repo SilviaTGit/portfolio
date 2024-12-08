@@ -20,7 +20,7 @@ export default function AboutMe() {
       <div className="hero--section--content--box about--section--box">
         <div className="hero--section--content">
           <p className="section--title">{t("aboutMeSection.title")}</p>
-          <h1 className="skills-section--heading">{t("aboutMeSection.heading")}</h1>
+          <h2 className="skills-section--heading">{t("aboutMeSection.heading")}</h2>
           <p className="hero--section-description">
           {t("aboutMeSection.description1")}
           </p>

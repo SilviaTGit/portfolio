@@ -89,6 +89,7 @@ function Navbar() {
           toggleNav();
         }}
         href="#"
+        aria-label="Open the Mobile Menu"
       >
         <span className="nav__hamburger__line"></span>
         <span className="nav__hamburger__line"></span>

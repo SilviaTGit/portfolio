@@ -1,11 +1,15 @@
 /* Global CSS */
-
+html {
+  font-size: 16px; /* Base font-size (1rem = 16px) */
+}
 body {
+  color: var(--black);
   margin: 0;
   font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   font-style: normal;
+  font-size: 1rem;
 }
 a {
   display: inline-block;
@@ -26,7 +30,6 @@ p {
   --heading-color: #23000b;
   --bg-shade: #f5dfb3;
   --secondary: #e62350;
-  --darkblue: #0e0214;
   --black: #000000;
   --white: #ffffff;
 }
@@ -34,9 +37,9 @@ p {
   font-family: "Roboto";
   display: inline-block;
   padding: 14px 32px;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -73,68 +76,57 @@ p {
   color: var(--primary);
   background-color: var(--white);
 }
-/* Global CSS Ends */
-/* Main Headings */
 
-/* Heading 1 */
+/* Main Headings */
 h1 {
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 67px;
+  font-size: 3.5rem; /* 56px */
+  line-height: 1.2;
 }
-/* Heading 2 */
 h2 {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 58px;
+  font-size: 3rem; /* 48px */
+  line-height: 1.2;
 }
-/* Heading 3 */
 h3 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 34px;
+  font-size: 1.5rem; /* 24px */
+  line-height: 1.4;
 }
+h1, h2, h3 {
+  font-weight: 700;
+  color: var(--heading-color);
+}
+/* Global CSS Ends */
 
 /* Pragraphs text large medium small */
 /* Body 1 */
-.text-lg {
-  color: var(--darkblue);
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 27px;
-}
-/* Body 2 */
 .text-md {
-  color: var(--darkblue);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
+  color: var(--black);
+  font-size: 1rem; /* 16px */
+  line-height: 1.5;
 }
 /* Body 3 */
 .text-sm {
   color: var(--black);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21px;
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.5;
 }
 
 /* Section Titles */
 /* Skills & About Me */
 .section--title {
   color: var(--heading-color);
-  font-size: 21px;
+  font-size: 1.3125rem; /* 21px */
   text-align: center;
   font-weight: 700;
-  line-height: 32px;
+  line-height: 1.5;
   display: flex;
   align-items: flex-start;
 }
 /* Portfolio & Contact Me */
 .sub--title {
   color: var(--heading-color);
-  font-size: 16px;
+  font-size: 1.3125rem; /* 21px */
   font-weight: 700;
-  line-height: 24px;
+  line-height: 1.5;
 }
 /* Section Titles Ends */
 
@@ -164,10 +156,7 @@ h3 {
 }
 /* Navbar Content */
 .navbar--content {
-  color: var(--darkblue);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
+  color: var(--black);
   cursor: pointer;
 }
 .navbar--active-content {
@@ -181,7 +170,6 @@ h3 {
   width: 100px;
   height: 100px;
 }
-
 .navbar--btns {
   display: flex;
   gap: 21.333px;
@@ -255,20 +243,14 @@ h3 {
   margin-top: 21.333px;
 }
 .hero--section--title {
-  color: var(--heading-color);
-  font-size: 74.667px;
-  font-weight: 700;
-  line-height: 90px;
   align-self: stretch;
 }
 .hero--section--title--color {
   color: var(--primary);
 }
 .hero--section-description {
-  color: var(--darkblue);
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 36px;
+  font-size: 1.5rem; /* 24px */
+  line-height: 1.5;
 }
 .hero--section--img {
   display: flex;
@@ -287,12 +269,6 @@ h3 {
   justify-content: center;
   align-items: flex-start;
   gap: 106.667px;
-}
-.skills--section--heading {
-  color: var(--heading-color);
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 77px;
 }
 .skills--section--container {
   display: grid;
@@ -315,7 +291,7 @@ h3 {
   border-bottom: 4px solid var(--secondary);
 }
 .skills--section--card:hover .skills--section--description {
-  color: var(--darkblue);
+  color: var(--black);
 }
 .skills--section--img {
   display: flex;
@@ -324,7 +300,7 @@ h3 {
   align-items: center;
   gap: 13.3px;
   border-radius: 10.6px;
-  background: #fff;
+  background: var(--white);
   box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
   img {
     width: 54px;
@@ -339,16 +315,10 @@ h3 {
   align-self: stretch;
 }
 .skills--section--title {
-  color: var(--heading-color);
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 45px;
+  font-size: 2rem;
 }
 .skills--section--description {
-  color: var(--black);
-  font-size: 21.3px;
-  font-weight: 400;
-  line-height: 32px;
+  font-size: 1.3125rem; /* 21px */
 }
 /* Skills Style Ends */
 
@@ -520,10 +490,7 @@ h3 {
   align-self: stretch;
 }
 .footer--content {
-  color: var(--black);
-  font-size: 18.667px;
-  font-weight: 400;
-  line-height: 28px;
+  font-size: 1.2rem;
 }
 
 /* Responsive Screens */

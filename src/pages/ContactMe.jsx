@@ -8,7 +8,7 @@ export default function ContactMe() {
       <div>
         <p className="sub--title">{t("contactMeSection.subtitle")}</p>
         <h2>{t("contactMeSection.heading")}</h2>
-        <p className="text-lg">
+        <p className="text-md">
         {t("contactMeSection.text")}
         </p>
       </div>
