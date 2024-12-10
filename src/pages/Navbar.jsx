@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import logoST from "../assets/images/ST-logo-nobg-100w.webp";
 import { useTranslation } from "react-i18next";
 import flagEN from "../assets/images/flags/english.webp";
@@ -6,30 +7,23 @@ import flagFR from "../assets/images/flags/french.webp";
 
 function Navbar() {
   const [navActive, setNavActive] = useState(false);
-  const [activeSection, setActiveSection] = useState(""); // Status for the active section
+  const [activeSection, setActiveSection] = useState(""); // Track active section
   const { t, i18n } = useTranslation();
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
+  const location = useLocation();
 
-  // Definition of the sections
+  // Define sections for navigation
   const sections = useMemo(
     () => [
-    { id: "heroSection", label: "home" },
-    { id: "MyPortfolio", label: "portfolio" },
-    { id: "AboutMe", label: "aboutMe" },
-    { id: "Contact", label: "contact" },
-  ],
-  []
+      { id: "/", label: "home", type: "route" },
+      { id: "/about", label: "aboutMe", type: "route" },
+    ],
+    []
   );
 
-  const toggleNav = () => {
-    setNavActive((prev) => !prev); // Reverse the menu status
-  };
-
-  const closeMenu = () => {
-    setNavActive(false);
-  };
-
+  const toggleNav = () => setNavActive((prev) => !prev);
+  const closeMenu = () => setNavActive(false);
   const toggleDropdown = () => setDropdownOpen((prev) => !prev);
 
   const changeLanguage = (lang) => {
@@ -37,33 +31,37 @@ function Navbar() {
     setDropdownOpen(false);
   };
 
-  // Function to handle scrolling
-  const handleScroll = useCallback(() => {
-    let currentSection = "";
-    sections.forEach(({ id }) => {
-      const element = document.getElementById(id);
-      if (element) {
-        const rect = element.getBoundingClientRect();
-        if (rect.top <= 100 && rect.bottom >= 100) {
-          currentSection = id;
-        }
-      }
-    });
-    setActiveSection(currentSection);
-  }, [sections]);
-
+  // Smooth scrolling to section
   const scrollToSection = (event, id) => {
     event.preventDefault();
-    closeMenu(); // To close the mobile menu
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    closeMenu();
+    if (id === "top") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    }
+    setActiveSection(id);
   };
 
+  // Track which section is currently in view
+  const handleScroll = useCallback(() => {
+    let currentSection = "";
+    const contactSection = document.getElementById("Contact");
+    if (contactSection) {
+      const rect = contactSection.getBoundingClientRect();
+      if (rect.top <= 100 && rect.bottom >= 100) {
+        currentSection = "Contact";
+      }
+    }
+    setActiveSection(currentSection);
+  }, []);
+
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [handleScroll]);
+    if (location.pathname === "/") {
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
+    }
+  }, [handleScroll, location.pathname]);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -80,12 +78,19 @@ function Navbar() {
   return (
     <nav className={`navbar ${navActive ? "active" : ""}`}>
       <div>
-        <img src={logoST} alt="Logo" className="navbar--logo--img" />
+        {/* Scroll to top on logo click */}
+        <a
+          href="#"
+          onClick={(e) => scrollToSection(e, "top")}
+          className="navbar--logo"
+        >
+          <img src={logoST} alt="Logo" className="navbar--logo--img" />
+        </a>
       </div>
       <a
         className={`nav__hamburger ${navActive ? "active" : ""}`}
         onClick={(e) => {
-          e.preventDefault(); // To prevent the default behavior of the anchor tag
+          e.preventDefault(); // Prevent default behavior
           toggleNav();
         }}
         href="#"
@@ -97,21 +102,21 @@ function Navbar() {
       </a>
       <div className={`navbar--items ${navActive ? "active" : ""}`}>
         <ul>
-          {sections
-            .filter((section) => section.id !== "Contact") // Exclude "Contact" from main links because it's a button
-            .map(({ id, label }) => (
-              <li key={id}>
-                <a
-                  href={`#${id}`}
-                  onClick={(e) => scrollToSection(e, id)}
-                  className={`navbar--content ${
-                    activeSection === id ? "navbar--active-content" : ""
-                  }`}
-                >
-                  {t(`navbar.${label}`)}
-                </a>
-              </li>
-            ))}
+          {sections.map(({ id, label }) => (
+            <li key={id}>
+              <NavLink
+                to={id}
+                onClick={closeMenu}
+                className={({ isActive }) =>
+                  `navbar--content ${
+                    isActive ? "navbar--active-content" : ""
+                  }`
+                }
+              >
+                {t(`navbar.${label}`)}
+              </NavLink>
+            </li>
+          ))}
         </ul>
       </div>
       <div className="navbar--btns">
@@ -146,7 +151,7 @@ function Navbar() {
             )}
           </div>
         </div>
-        {/* Contact Button */}
+        {/* Existing Contact Button */}
         <a
           href="#Contact"
           onClick={(e) => scrollToSection(e, "Contact")}

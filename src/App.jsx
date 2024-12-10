@@ -2,6 +2,7 @@ import "../src/assets/styles/App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./pages/Navbar";
 import Home from "./pages/Home/Home";
+import AboutMe from "./pages/AboutMe";
 
 function App() {
   return (
@@ -13,13 +14,12 @@ function App() {
           v7_startTransition: true,
         }}
       >
-        <div>
           <Navbar />
           <Routes>
-            <Route path="/" element={<Home />}></Route>
-            <Route path="*" element={<div>404 Not Found</div>}></Route>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutMe />} />
+            <Route path="*" element={<div>404 Not Found</div>} />
           </Routes>
-        </div>
       </Router>
     </div>
   );

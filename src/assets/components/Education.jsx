@@ -1,4 +1,4 @@
-import Timeline from "../assets/components/Timeline";
+import Timeline from "./Timeline";
 import { useTranslation } from "react-i18next";
 
 export default function Education() {

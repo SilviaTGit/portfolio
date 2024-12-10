@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
-import heroImg from "../assets/images/hero_img1.webp";
-import heroImgSmall from "../assets/images/hero_img1_260w.webp";
-import heroImgMedium from "../assets/images/hero_img1_400w.webp";
-import heroImgLarge from "../assets/images/hero_img1_700w.webp";
+import heroImg from "../images/hero-images/hero-img1.webp";
+import heroImgSmall from "../images/hero-images/hero-img1-260w.webp";
+import heroImgMedium from "../images/hero-images/hero-img1-400w.webp";
+import heroImgLarge from "../images/hero-images/hero-img1-700w.webp";
 
 export default function HeroSection() {
   const { t } = useTranslation(); // Hook for translations

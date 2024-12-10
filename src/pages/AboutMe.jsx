@@ -1,13 +1,18 @@
-import aboutMeImg from "../assets/images/aboutme-photo.webp";
-import aboutMeImgSmall from "../assets/images/aboutme-photo-140w.webp";
-import aboutMeImgMedium from "../assets/images/aboutme-photo-320w.webp";
-import aboutMeImgLarge from "../assets/images/aboutme-photo-567w.webp";
+import Education from "../assets/components/Education";
+import ContactMe from "../assets/components/ContactMe";
+import Footer from "../assets/components/Footer";
+/*import "../styles/AboutMe.css";*/
+import aboutMeImg from "../assets/images/aboutme-photos/aboutme-photo.webp";
+import aboutMeImgSmall from "../assets/images/aboutme-photos/aboutme-photo-140w.webp";
+import aboutMeImgMedium from "../assets/images/aboutme-photos/aboutme-photo-320w.webp";
+import aboutMeImgLarge from "../assets/images/aboutme-photos/aboutme-photo-567w.webp";
 import { useTranslation } from "react-i18next";
 
 export default function AboutMe() {
   const  {t} = useTranslation();
 
   return (
+    <>
     <section id="AboutMe" className="about--section">
       <div className="about--section--img">
       <img
@@ -30,5 +35,9 @@ export default function AboutMe() {
         </div>
       </div>
     </section>
+    <Education />
+    <ContactMe />
+    <Footer />
+    </>
   );
 }

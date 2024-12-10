@@ -1,4 +1,4 @@
-import data from "../data/index.json";
+import data from "../../data/index.json";
 import { useTranslation } from "react-i18next";
 
 export default function MyPortfolio() {

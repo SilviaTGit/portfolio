@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from "react";
-import footerLogo from "../assets/images/ST-logo-nobg.webp";
+import footerLogo from "../images/ST-logo-nobg.webp";
 import { useTranslation } from "react-i18next";
 
 function Footer() {
