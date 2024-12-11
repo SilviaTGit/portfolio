@@ -22,14 +22,14 @@ export default function AboutMe() {
           alt="About Me photo"
         />
       </div>
-      <div className="hero--section--content--box about--section--box">
+      <div className="about--section--box">
         <div className="hero--section--content">
           <p className="section--title">{t("aboutMeSection.title")}</p>
-          <h2 className="skills-section--heading">{t("aboutMeSection.heading")}</h2>
-          <p className="hero--section-description">
+          <h2 className="about--section--heading">{t("aboutMeSection.heading")}</h2>
+          <p className="about--section-description">
           {t("aboutMeSection.description1")}
           </p>
-          <p className="hero--section-description">
+          <p className="about--section-description">
           {t("aboutMeSection.description2")}
           </p>
         </div>

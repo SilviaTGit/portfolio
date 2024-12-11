@@ -5,7 +5,7 @@ html {
 body {
   color: var(--black);
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Arial", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   font-style: normal;
@@ -43,7 +43,7 @@ p {
 }
 
 .btn {
-  font-family: "Roboto";
+  font-family: "Arial";
   display: inline-block;
   padding: 14px 32px;
   font-size: 1rem;
@@ -263,10 +263,10 @@ h1, h2, h3 {
 }
 .hero--section--img {
   display: flex;
+  justify-content: center;
 }
 .hero--section--img > img {
-  width: 100%;
-  height: 100%;
+  width: 800px;
 }
 /* Hero Section Style Ends */
 
@@ -342,6 +342,10 @@ h1, h2, h3 {
 .about--section--img > img {
   width: 100%;
   height: 100%;
+}
+.about--section-description {
+  font-size: var(--font-size-body-md);
+  line-height: 1.5;
 }
 /* About Us Ends */
 
@@ -513,6 +517,9 @@ h1, h2, h3 {
 }
 
 @media only screen and (max-width: 1600px) {
+  .hero--section--img > img {
+    width: 700px;
+  }
   .skills--section--heading {
     font-size: 3.375rem; /* 54px */
     line-height: 4.375rem; /* 70px */
@@ -549,6 +556,7 @@ h1, h2, h3 {
   }
   .hero--section--title,
   .hero--section-description,
+  .about--section-description,
   .footer--content {
     text-align: center;
   }
@@ -601,6 +609,9 @@ h1, h2, h3 {
   .hero--section--content--box {
     gap: 10px;
   }
+  .hero--section--img > img {
+    width: 600px;
+  }
   .container {
     display: flex;
     flex-direction: column;
@@ -632,6 +643,9 @@ h1, h2, h3 {
   }
   .hero--section {
     padding: 133.333px 30px;
+  }
+  .hero--section--img > img {
+    width: 100%;
   }
   .navbar {
     padding: 5px 70px 5px 15.333px;
