@@ -1,0 +1,100 @@
+{
+  "skills": [
+    {
+      "id": "1",
+      "src": "/portfolio/src/assets/images/data-images/front-end.webp",
+      "translationKey": "skills.frontEnd"
+    },
+    {
+      "id": "2",
+      "src": "/portfolio/src/assets/images/data-images/back-end.webp",
+      "translationKey": "skills.backEnd"
+    },
+    {
+      "id": "3",
+      "src": "/portfolio/src/assets/images/data-images/ui-ux-design.webp",
+      "translationKey": "skills.uiUxDesign"
+    },
+    {
+      "id": "4",
+      "src": "/portfolio/src/assets/images/data-images/learning-skills.webp",
+      "translationKey": "skills.currentlyLearning"
+    }
+  ],
+  "portfolio": [
+    {
+      "id": "1",
+      "src": "/portfolio/src/assets/images/data-images/preview-booki.webp",
+      "translations": {
+        "title": "portfolio.booki.title",
+        "description": "portfolio.booki.description"
+      },
+      "link": "https://github.com/SilviaTGit/Project2.git",
+      "logos": {
+        "html5": "/portfolio/src/assets/images/data-images/html5.webp",
+        "css3": "/portfolio/src/assets/images/data-images/css3.webp",
+        "git": "/portfolio/src/assets/images/data-images/git.webp",
+        "github": "/portfolio/src/assets/images/data-images/github.webp"
+      }
+    },
+    {
+      "id": "2",
+      "src": "/portfolio/src/assets/images/data-images/preview-sophie-bluel.webp",
+      "translations": {
+        "title": "portfolio.sophieBluel.title",
+        "description": "portfolio.sophieBluel.description"
+      },
+      "link": "https://github.com/SilviaTGit/Portfolio-architecte-sophie-bluel.git",
+      "logos": {
+        "javascript": "/portfolio/src/assets/images/data-images/javascript.webp",
+        "swagger": "/portfolio/src/assets/images/data-images/swagger.webp",
+        "nodejs": "/portfolio/src/assets/images/data-images/nodejs.webp"
+      }
+    },
+    {
+      "id": "3",
+      "src": "/portfolio/src/assets/images/data-images/preview-nina-carducci.webp",
+      "translations": {
+        "title": "portfolio.ninaCarducci.title",
+        "description": "portfolio.ninaCarducci.description"
+      },
+      "link": "https://github.com/SilviaTGit/Nina-Carducci-Dev.git",
+      "logos": {
+        "chrome-dev-tools": "/portfolio/src/assets/images/data-images/chrome-dev-tools.webp",
+        "google-lighthouse": "/portfolio/src/assets/images/data-images/lighthouse.webp",
+        "wave": "/portfolio/src/assets/images/data-images/wave.webp"
+      }
+    },
+    {
+      "id": "4",
+      "src": "/portfolio/src/assets/images/data-images/preview-kasa.webp",
+      "translations": {
+        "title": "portfolio.kasa.title",
+        "description": "portfolio.kasa.description"
+      },
+      "link": "https://github.com/SilviaTGit/Project5.git",
+      "logos": {
+        "react": "/portfolio/src/assets/images/data-images/react.webp",
+        "react-router": "/portfolio/src/assets/images/data-images/react-router.webp",
+        "vite": "/portfolio/src/assets/images/data-images/vite.webp",
+        "sass": "/portfolio/src/assets/images/data-images/sass.webp"
+      }
+    },
+    {
+      "id": "5",
+      "src": "/portfolio/src/assets/images/data-images/preview-mon-vieux-grimoire.webp",
+      "translations": {
+        "title": "portfolio.monVieuxGrimoire.title",
+        "description": "portfolio.monVieuxGrimoire.description"
+      },
+      "link": "https://github.com/SilviaTGit/P6-Web-Dev-livres.git",
+      "logos": {
+        "nodejs": "/portfolio/src/assets/images/data-images/nodejs.webp",
+        "express": "/portfolio/src/assets/images/data-images/express.webp",
+        "mongodb": "/portfolio/src/assets/images/data-images/mongodb.webp",
+        "mongoose": "/portfolio/src/assets/images/data-images/mongoose.webp",
+        "postman": "/portfolio/src/assets/images/data-images/postman.webp"
+      }
+    }
+  ]
+}
