@@ -2,7 +2,7 @@
   "skills": [
     {
       "id": "1",
-      "src": "../data-images/front-end.webp",
+      "src": "./data-images/front-end.webp",
       "translationKey": "skills.frontEnd"
     },
     {

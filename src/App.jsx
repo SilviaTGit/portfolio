@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Router
-        basename="/portfolio"
+        basename="/portfolio/"
         future={{
           v7_relativeSplatPath: true,
           v7_startTransition: true,
