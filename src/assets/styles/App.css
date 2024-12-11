@@ -608,7 +608,7 @@ h1, h2, h3 {
   }
   .footer--social--icon > ul,
   .footer--items > ul {
-    padding: 0;
+    padding: 10px;
     align-items: center;
   }
   .divider {

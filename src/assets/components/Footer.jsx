@@ -1,41 +1,13 @@
-import { useState, useEffect, useMemo } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import footerLogo from "../images/ST-logo-nobg.webp";
 import { useTranslation } from "react-i18next";
 
 function Footer() {
   const {t} = useTranslation();
-  const [activeSection, setActiveSection] = useState(""); // Status for the active section
+  const location = useLocation();
 
-  const sections = useMemo(() => [
-    { id: "heroSection", label: "home" },
-    { id: "MyPortfolio", label: "portfolio" },
-    { id: "AboutMe", label: "aboutMe" },
-    { id: "Contact", label: "contact" },
-  ], []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      let currentSection = "";
-      sections.forEach(({ id }) => {
-        const element = document.getElementById(id);
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          // Check if the section is visible (partially or completely)
-          if (rect.top <= 100 && rect.bottom >= 100) {
-            currentSection = id;
-          }
-        }
-      });
-      setActiveSection(currentSection);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [sections]);
-
-  const scrollToSection = (event, id) => {
-    event.preventDefault();
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
 
@@ -47,19 +19,32 @@ function Footer() {
         </div>
         <div className="footer--items">
           <ul>
-            {sections.map(({ id, label }) => (
-              <li key={id}>
-                <a
-                  href={`#${id}`}
-                  onClick={(e) => scrollToSection(e, id)}
-                  className={`text-md ${
-                    activeSection === id ? "navbar--active-content" : ""
-                  }`}
-                >
-                  {t(`footer.${label}`)} {/* Use translation */}
-                </a>
+            <li>
+              <NavLink
+                to="/"
+                onClick={scrollToTop}
+                className={({ isActive }) =>
+                  ` text-md ${
+                    isActive && location.pathname === "/" ? "navbar--active-content" : ""
+                  }`
+                }
+              >
+                {t("footer.home")} {/* Use translation */}
+                </NavLink>
               </li>
-            ))}
+              <li>
+                <NavLink
+                  to="/about"
+                  onClick={scrollToTop}
+                  className={({ isActive }) =>
+                    ` text-md ${
+                      isActive && location.pathname === "/about" ? "navbar--active-content" : ""
+                    }`
+                  }
+                >
+                  {t("footer.aboutMe")} {/* Use translation */}
+                </NavLink>
+              </li>
           </ul>
         </div>
         <div className="footer--social--icon">
