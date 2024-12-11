@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 
 export default function MySkills() {
   const {t} = useTranslation();
+  console.log("Data JSON:", data);
 
   return (
     <section className="skills--section" id="mySkills">
