@@ -18,7 +18,7 @@ To get started with this project, you'll need to clone the repository and instal
 
 ### Clone the Repository
 
-git clone https://github.com/your-username/portfolio-web.git
+git clone https://github.com/SilviaTGit/portfolio/
 cd portfolio
 
 ## Install Dependencies
