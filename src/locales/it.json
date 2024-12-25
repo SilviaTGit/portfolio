@@ -1,0 +1,108 @@
+{
+    "heroSection": {
+        "title": "Ciao, sono Silvia",
+        "subtitle": "Full Stack",
+        "description": "Sono appassionata di sviluppo web, UI/UX e accessibilità. Sei curioso di scoprire di più su di me?",
+        "buttonText": "Connettiti con me!"
+    },
+
+    "navbar": {
+        "home": "Home",
+        "portfolio": "Portfolio",
+        "aboutMe": "Chi Sono",
+        "contact": "Contattami",
+        "language": "Lingua"
+    },
+
+    "skillsSection": {
+        "title": "Le Mie Competenze",
+        "heading": "La Mia Esperienza"
+    },
+    "skills": {
+        "frontEnd": {
+            "title": "Front-End",
+            "description": "HTML5, CSS3, Javascript, React.js, Vite, SASS"
+        },
+        "backEnd": {
+            "title": "Back-End",
+            "description": "Node.js, MongoDB, RESTful API, Postman, Express.js"
+        },
+        "uiUxDesign": {
+            "title": "UI e UX Design",
+            "description": "Figma, Adobe XD, Canva"
+        },
+        "currentlyLearning": {
+            "title": "Attualmente Sto Imparando",
+            "description": "PHP, MySQL, Bootstrap, Angular.js, Tailwind..."
+        }
+    },
+    "myPortfolioSection": {
+        "subtitle": "Progetti Recenti",
+        "heading": "Il Mio Portfolio",
+        "gitHubBtn": "Visita il Mio GitHub",
+        "gitHubProjectBtn": "Vedi su GitHub"
+    },
+
+    "portfolio": {
+        "booki": {
+            "title": "Booki",
+            "description": "Sito web responsive di un'agenzia di viaggi sviluppato in HTML e CSS, che permette ai clienti di trovare alloggi e attività nella città che stanno cercando."
+        },
+        "sophieBluel": {
+            "title": "Sophie Bluel",
+            "description": "Questo progetto prevede la creazione di una pagina web dinamica per un interior designer utilizzando JavaScript, con un focus sulle interazioni con l'utente, la manipolazione del DOM e la comunicazione API."
+        },
+        "ninaCarducci": {
+            "title": "Nina Carducci",
+            "description": "Migliorare SEO, le performance e l'accessibilità di un sito web identificando i problemi e applicando correzioni, utilizzando strumenti come Chrome Dev Tools, Lighthouse e Wave."
+        },
+        "kasa": {
+            "title": "Kasa",
+            "description": "Realizzazione del front-end di un'app per affitti immobiliari utilizzando React, React Router e Vite, con un focus sullo sviluppo di interfacce dinamiche, la navigazione tra pagine e lo styling con Sass."
+        },
+        "monVieuxGrimoire": {
+            "title": "Mon Vieux Grimoire",
+            "description": "Questo progetto prevede lo sviluppo del back-end di un sito di valutazione libri utilizzando Node.js, Express e MongoDB, implementando operazioni CRUD, autenticazione sicura e gestione delle immagini. Segue un'architettura MVC e utilizza Mongoose per il modeling dei dati."
+        }
+    },
+
+    "aboutMeSection": {
+        "title": "Su di Me",
+        "heading": "Chi Sono",
+        "description1": "Con una laurea magistrale in Languages for Communication in International Enterprises and Organizations, offro una padronanza avanzata di inglese, francese e italiano, completata da competenze in marketing digitale e diritto internazionale. La mia carriera è iniziata nelle vendite per l’export, dove ho affinato le mie competenze nella gestione delle relazioni internazionali e nella comunicazione interculturale. Spinta dalla passione per la tecnologia, sono passata allo sviluppo web, unendo le mie capacità tecniche a un approccio strategico e orientato al business.",
+        "description2": "Mi specializzo nella creazione di soluzioni digitali che siano non solo tecnicamente solide, ma anche allineate alle esigenze globali del business e agli standard normativi. Sono entusiasta di collaborare a progetti che sfruttano la mia esperienza multidisciplinare per ottenere risultati significativi nel settore tecnologico. 🌍"
+    },
+
+    "contactMeSection": {
+        "subtitle": "Entriamo in Contatto",
+        "heading": "Contattami",
+        "text": "Interessato a Collaborare?",
+        "contactMeBtn": "Contattami"
+    },
+
+    "footer": {
+        "home": "Home",
+        "portfolio": "Portfolio",
+        "aboutMe": "Su di Me",
+        "contact": "Contatto",
+        "content": "© Realizzato con 💖 da Silvia"
+    },
+
+    "educationSection": {
+        "subtitle": "La Mia Formazione",
+        "heading": "Formazione"
+    },
+
+    "timeline": {
+        "university": {
+            "title": "Università di Modena e Reggio Emilia",
+            "date": "Gennaio 2020 - Aprile 2023",
+            "description": "Laurea Magistrale in Lingue per la Comunicazione nelle Imprese e nelle Organizzazioni Internazionali"
+        },
+        "openclassrooms": {
+            "title": "OpenClassrooms",
+            "date": "Aprile 2024 - Dicembre 2024",
+            "description": "Programma di formazione per Web Developer"
+        }
+    }
+}

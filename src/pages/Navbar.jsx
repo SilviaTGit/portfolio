@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom"
 import logoST from "../assets/images/ST-logo-nobg-100w.webp";
 import { useTranslation } from "react-i18next";
 import flagEN from "../assets/images/flags/english.webp";
+import flagIT from "../assets/images/flags/italian.webp";
 import flagFR from "../assets/images/flags/french.webp";
 
 function Navbar() {
@@ -142,6 +143,13 @@ function Navbar() {
                 >
                   <img src={flagEN} alt="English" className="flag-icon" />
                   <p>English</p>
+                </button>
+                <button
+                  onClick={() => changeLanguage("it")}
+                  className="dropdown-item"
+                >
+                  <img src={flagIT} alt="Italian" className="flag-icon" />
+                  <p>Italiano</p>
                 </button>
                 <button
                   onClick={() => changeLanguage("fr")}
