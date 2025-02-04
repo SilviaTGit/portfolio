@@ -3,6 +3,7 @@ import heroImg from "../images/hero-images/hero-img1.webp";
 import heroImgSmall from "../images/hero-images/hero-img1-260w.webp";
 import heroImgMedium from "../images/hero-images/hero-img1-400w.webp";
 import heroImgLarge from "../images/hero-images/hero-img1-700w.webp";
+import AnimatedText from "./AnimatedText"; // Importa il nuovo componente
 
 export default function HeroSection() {
   const { t } = useTranslation(); // Hook for translations
@@ -14,10 +15,9 @@ export default function HeroSection() {
           <p className="section--title">{t("heroSection.title")}</p>
           <h1 className="hero--section--title">
             <span className="hero--section-title--color">
-              {t("heroSection.subtitle")}
             </span>
-            <br />
-            Developer
+            
+            <AnimatedText /> {/* Usa il nuovo componente per il testo che cambia */}
           </h1>
           <p className="hero--section-description">{t("heroSection.description")}</p>
         </div>

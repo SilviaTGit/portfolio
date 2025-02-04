@@ -737,3 +737,13 @@ h1, h2, h3 {
 }
 
 /* Responsive Screens Ends*/
+
+.animated-text {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.animated-word {
+  font-weight: bold;
+  color: var(--primary);
+}
