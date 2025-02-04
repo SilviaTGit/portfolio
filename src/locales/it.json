@@ -21,7 +21,7 @@
     "skills": {
         "frontEnd": {
             "title": "Front-End",
-            "description": "HTML5, CSS3, Javascript, React.js, Vite, SASS"
+            "description": "HTML5, CSS3, Javascript, React.js, Vite, SASS, Typescript"
         },
         "backEnd": {
             "title": "Back-End",
@@ -63,6 +63,10 @@
         "monVieuxGrimoire": {
             "title": "Mon Vieux Grimoire",
             "description": "Questo progetto prevede lo sviluppo del back-end di un sito di valutazione libri utilizzando Node.js, Express e MongoDB, implementando operazioni CRUD, autenticazione sicura e gestione delle immagini. Segue un'architettura MVC e utilizza Mongoose per il modeling dei dati."
+        },
+        "appNutrizione": {
+            "title": "App in sviluppo",
+            "description": "App che propone ricette in base all'obiettivo nutrizionale dell'utente. Questo progetto prevede le seguenti tecnologie: Spring, Postgre SQL, Angular, Typescript, API Rest, Microservizi."
         }
     },
 

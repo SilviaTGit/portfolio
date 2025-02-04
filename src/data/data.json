@@ -95,6 +95,22 @@
         "mongoose": "./data-images/mongoose.webp",
         "postman": "./data-images/postman.webp"
       }
+    },
+    {
+      "id": "6",
+      "src": "./data-images/preview-nutriapp.webp",
+      "translations": {
+        "title": "portfolio.appNutrizione.title",
+        "description": "portfolio.appNutrizione.description"
+      },
+      "link": "",
+      "logos": {
+        "java": "./data-images/java.webp",
+        "postgre": "./data-images/postgre.webp",
+        "angular": "./data-images/angular.webp",
+        "typescript": "./data-images/typescript.webp",
+        "api": "./data-images/api.webp"
+      }
     }
   ]
 }
