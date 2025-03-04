@@ -24,6 +24,34 @@
   "portfolio": [
     {
       "id": "1",
+      "src": "./data-images/preview-grand-budapest-hotel.webp",
+      "translations": {
+        "title": "portfolio.grandBudapestHotel.title",
+        "description": "portfolio.grandBudapestHotel.description"
+      },
+      "link": "https://github.com/SilviaTGit/GrandBudapestHotel",
+      "logos": {
+        "html5": "./data-images/html5.webp",
+        "css3": "./data-images/css3.webp"
+      }
+    },
+    {
+      "id": "2",
+      "src": "./data-images/preview-robbie-lens.webp",
+      "translations": {
+        "title": "portfolio.robbieLens.title",
+        "description": "portfolio.robbieLens.description"
+      },
+      "link": "https://silviatgit.github.io/RobbieLens/",
+      "logos": {
+        "html5": "./data-images/html5.webp",
+        "css3": "./data-images/css3.webp",
+        "git": "./data-images/git.webp",
+        "github": "./data-images/github.webp"
+      }
+    },
+    {
+      "id": "3",
       "src": "./data-images/preview-booki.webp",
       "translations": {
         "title": "portfolio.booki.title",
@@ -38,7 +66,7 @@
       }
     },
     {
-      "id": "2",
+      "id": "4",
       "src": "./data-images/preview-sophie-bluel.webp",
       "translations": {
         "title": "portfolio.sophieBluel.title",
@@ -52,7 +80,7 @@
       }
     },
     {
-      "id": "3",
+      "id": "5",
       "src": "./data-images/preview-nina-carducci.webp",
       "translations": {
         "title": "portfolio.ninaCarducci.title",
@@ -66,7 +94,7 @@
       }
     },
     {
-      "id": "4",
+      "id": "6",
       "src": "./data-images/preview-kasa.webp",
       "translations": {
         "title": "portfolio.kasa.title",
@@ -81,7 +109,7 @@
       }
     },
     {
-      "id": "5",
+      "id": "7",
       "src": "./data-images/preview-mon-vieux-grimoire.webp",
       "translations": {
         "title": "portfolio.monVieuxGrimoire.title",
@@ -97,7 +125,7 @@
       }
     },
     {
-      "id": "6",
+      "id": "8",
       "src": "./data-images/preview-nutriapp.webp",
       "translations": {
         "title": "portfolio.appNutrizione.title",

@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
-import heroImg from "../images/hero-images/hero-img1.webp";
-import heroImgSmall from "../images/hero-images/hero-img1-260w.webp";
-import heroImgMedium from "../images/hero-images/hero-img1-400w.webp";
-import heroImgLarge from "../images/hero-images/hero-img1-700w.webp";
+import heroImg from "../images/hero-images/hero-img2.webp";
+import heroImgSmall from "../images/hero-images/hero-img2-260w.webp";
+import heroImgMedium from "../images/hero-images/hero-img2-400w.webp";
+import heroImgLarge from "../images/hero-images/hero-img2-700w.webp";
 import AnimatedText from "./AnimatedText"; // Importa il nuovo componente
 
 export default function HeroSection() {

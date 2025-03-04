@@ -44,7 +44,15 @@
     },
 
     "portfolio": {
-    "booki": {
+    "grandBudapestHotel": {
+      "title": "Grand Budapest Hotel",
+      "description": "This is the first website I developed in 2015, where I discovered my passion for web development. It showcases information on rooms, services, and contact details, and was built using HTML and CSS."
+    },
+    "robbieLens": {
+      "title": "Robbie Lens",
+      "description": "Website of a professional photographer developed in HTML and CSS, showing information on services offered, a portfolio of previous jobs and a contact form."
+    },
+      "booki": {
       "title": "Booki",
       "description": "Responsive website of a travel agency developed in HTML and CSS, that allows customers to find accommodation and activities in the city they are looking for."
     },
