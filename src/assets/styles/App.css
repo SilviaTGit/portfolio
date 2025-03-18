@@ -295,6 +295,7 @@ h1, h2, h3 {
   border-radius: 10.6px;
   background: var(--bg-shade);
   min-height: 250px;
+  border-bottom: 4px solid var(--bg-shade);
 }
 .skills--section--card:hover {
   border-bottom: 4px solid var(--secondary);
@@ -509,7 +510,7 @@ h1, h2, h3 {
 /* Responsive Screens */
 @media only screen and (max-width: 1800px) {
   h1 {
-    font-size: 4.25rem; /* 68px */
+    font-size: 3rem; /* 48px */
   }
   .skills--section--title {
     font-size: 1.75rem; /* 28px */
@@ -518,7 +519,7 @@ h1, h2, h3 {
 
 @media only screen and (max-width: 1600px) {
   .hero--section--img > img {
-    width: 700px;
+    width: 590px;
   }
   .skills--section--heading {
     font-size: 3.375rem; /* 54px */

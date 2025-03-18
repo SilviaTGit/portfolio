@@ -29,7 +29,7 @@
         },
         "uiUxDesign": {
             "title": "UI e UX Design",
-            "description": "Figma, Adobe XD, Canva"
+            "description": "Figma, Adobe XD, Canva, Adobe suite, Ricerca UX"
         },
         "currentlyLearning": {
             "title": "Attualmente Sto Imparando",
@@ -108,13 +108,13 @@
     "timeline": {
         "university": {
             "title": "Università di Modena e Reggio Emilia",
-            "date": "Gennaio 2020 - Aprile 2023",
+            "date": "Settembre 2020 - Aprile 2023",
             "description": "Laurea Magistrale in Lingue per la Comunicazione nelle Imprese e nelle Organizzazioni Internazionali"
         },
         "openclassrooms": {
             "title": "OpenClassrooms",
             "date": "Aprile 2024 - Dicembre 2024",
-            "description": "Programma di formazione per Web Developer"
+            "description": "Diploma in Web Development"
         }
     }
 }
