@@ -139,6 +139,20 @@
         "typescript": "./data-images/typescript.webp",
         "api": "./data-images/api.webp"
       }
+    },
+    {
+      "id": "9",
+      "src": "./data-images/preview-banana-design.webp",
+      "translations": {
+        "title": "portfolio.bananaDesign.title",
+        "description": "portfolio.bananaDesign.description"
+      },
+      "link": "",
+      "logos": {
+        "wordpress": "./data-images/wordpress.webp",
+        "elementor": "./data-images/elementor.webp",
+        "css3": "./data-images/css3.webp"
+      }
     }
   ]
 }

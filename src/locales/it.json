@@ -21,19 +21,19 @@
     "skills": {
         "frontEnd": {
             "title": "Front-End",
-            "description": "HTML5, CSS3, Javascript, React.js, Vite, SASS, Typescript"
+            "description": "HTML5, CSS3, Javascript, React.js, Vite, SASS, Typescript, WordPress, Elementor"
         },
         "backEnd": {
             "title": "Back-End",
-            "description": "Node.js, MongoDB, RESTful API, Postman, Express.js"
+            "description": "Node.js, MongoDB, Mongoose, RESTful API, Postman, Express.js"
         },
         "uiUxDesign": {
             "title": "UI e UX Design",
             "description": "Figma, Adobe XD, Canva, Adobe suite, Ricerca UX"
         },
         "currentlyLearning": {
-            "title": "Attualmente Sto Imparando",
-            "description": "PHP, MySQL, Bootstrap, Angular.js, Tailwind..."
+            "title": "Attualmente sto imparando",
+            "description": "PHP, MySQL, Bootstrap, Angular.js..."
         }
     },
     "myPortfolioSection": {
@@ -75,6 +75,10 @@
         "appNutrizione": {
             "title": "App in sviluppo",
             "description": "App che propone ricette in base all'obiettivo nutrizionale dell'utente. Questo progetto prevede le seguenti tecnologie: Spring, Postgre SQL, Angular, Typescript, API Rest, Microservizi."
+        },
+        "bananaDesign": {
+            "title": "Banana Design",
+            "description": "Sito web per l’agenzia Banana Design, sviluppato con WordPress, Elementor e CSS personalizzato. Include un form contatti con WPForms, pop-up newsletter con Hustle e ottimizzazione delle prestazioni."
         }
     },
 
